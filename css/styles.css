@@ -1,0 +1,345 @@
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #f8f9fa, #dfe4ea); /* Soft gradient background */
+    color: #212529;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navigation Bar */
+nav {
+    background-color: #343a40;
+    padding: 15px 0;
+    text-align: center;
+}
+
+nav .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+nav .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+}
+
+nav .menu a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+nav .menu a:hover {
+    color: #007bff;
+}
+
+/* Hero Section */
+header {
+    background: #007bff;
+    color: white;
+    text-align: center;
+    padding: 80px 20px;
+    border-radius: 0 0 30px 30px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+header .btn {
+    display: inline-block;
+    padding: 12px 24px;
+    background: #0056b3;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 25px;
+    transition: 0.3s;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+header .btn:hover {
+    background: #003d82;
+}
+
+/* Job Listings */
+.jobs-section {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1s ease-in-out;
+}
+
+.jobs-section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.job-list {
+    list-style: none;
+    padding: 0;
+}
+
+.job-item {
+    background: #f8f9fa;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.job-item:hover {
+    transform: scale(1.02);
+}
+
+.job-item h3 {
+    margin: 0;
+}
+
+.job-item p {
+    margin: 5px 0;
+    color: #555;
+}
+
+.job-item .btn {
+    display: inline-block;
+    padding: 8px 16px;
+    background: #007bff;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 25px;
+    transition: 0.3s;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.job-item .btn:hover {
+    background: #0056b3;
+}
+
+/* Footer */
+footer {
+    background-color: #343a40;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 40px;
+    border-radius: 30px 30px 0 0;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #3674B5;
+    color: white;
+}
+
+.btn {
+    padding: 8px 12px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    color: white;
+}
+
+.approve {
+    background-color: #4CAF50;
+}
+
+.reject {
+    background-color: #f44336;
+}
+
+.status-approved {
+    color: green;
+}
+
+.status-rejected {
+    color: red;
+}
+
+.status-pending {
+    color: orange;
+}
+
+form {
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+label {
+    font-weight: bold;
+}
+
+input[type="text"], input[type="email"], input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #3674B5;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 10px;
+}
+
+/* Video Section */
+.video-section {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.video-section h2 {
+    font-size: 28px;
+    color: #3674B5;
+    margin-bottom: 15px;
+}
+
+.video-section p {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.video-box {
+    max-width: 800px;
+    margin: auto;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+video {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* Admin Page Basic Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+nav {
+    background-color: #007BFF;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.dashboard {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.card {
+    background-color: #e9ecef;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    width: 30%;
+}
+
+.card h3 {
+    margin-bottom: 10px;
+}
+
+.manage-links {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.manage-links .btn {
+    background-color: #28a745;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 10px;
+    display: inline-block;
+}
+
+.manage-links .btn:hover {
+    background-color: #218838;
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #333;
+    color: white;
+    margin-top: 30px;
+}
